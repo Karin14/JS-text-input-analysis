@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text analysis</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="wrapper">
+        <h2>Text analysis</h2>
+        <label for="textarea">
+            Insert text:
+            <textarea id="textarea" cols="50" rows="7"></textarea>
+        </label>
+        <button onclick="analyzeText()">Analyze text</button>
+        <div id="analyze-results"></div>
+        <hr>
+        <label for="search">
+            <input type="text" id="search" placeholder="search in text">
+        </label>
+        <button id="button-search" onclick="searchString()">Search</button>
+        <div id="search-results"></div>
+        <hr>
+        <button id="encryption" onclick="replaceValues()">Encrypt text</button>
+        <p class="encrypt"><i>encryption code replaces letters o,i,e,a,s,b (it is not case sensitive)</i></p>
+        <div id="encryption-results"></div>
+        <hr>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
